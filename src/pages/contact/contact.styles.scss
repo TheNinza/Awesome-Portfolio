@@ -1,0 +1,12 @@
+.contact-container {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  z-index: -1;
+  .contact-bg-image {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

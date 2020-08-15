@@ -1,0 +1,40 @@
+.header-container {
+  width: 100vw;
+  height: 75px;
+  position: absolute;
+  .options-container {
+    width: 50%;
+    height: 100%;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .option-link {
+      margin-right: 50px;
+      cursor: pointer;
+      font-size: 1.7em;
+      color: #676767;
+      &:last-child {
+        margin-right: 12%;
+      }
+    }
+
+    .about-glow {
+      color: #007f9b;
+      font-weight: bold;
+    }
+    .skills-glow {
+      color: #ff9b53;
+      font-weight: bold;
+    }
+    .projects-glow {
+      color: #06c802;
+      font-weight: bold;
+    }
+    .contact-glow {
+      color: #585858;
+      font-weight: bold;
+    }
+  }
+}
