@@ -2,11 +2,45 @@
   height: 100vh;
   width: 100vw;
   position: relative;
-  z-index: -1;
   .skills-bg-image {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 70%;
+    z-index: -1;
+  }
+  .skills-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .cubes-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 68%;
+      width: 100%;
+      padding: 0 8.2%;
+      .cube {
+        height: 100%;
+        width: 28%;
+        transform: translateY(-5%);
+        .cube-title {
+          text-align: center;
+          font-weight: bold;
+          font-size: 1.8rem;
+          margin-bottom: 15px;
+        }
+        .development-title {
+          color: #007f9b;
+        }
+        .coding-title {
+          color: #ff9b53;
+        }
+        .content-title {
+          color: #06c802;
+        }
+      }
+    }
   }
 }

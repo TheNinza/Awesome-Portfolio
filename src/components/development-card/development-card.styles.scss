@@ -1,0 +1,15 @@
+.card {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 4px 2px rgba($color: #000000, $alpha: 0.25);
+  display: flex;
+  flex-direction: column;
+  .end-line {
+    height: 1px;
+    width: 70%;
+    background-color: #dfdfdf;
+    margin: auto;
+  }
+}
