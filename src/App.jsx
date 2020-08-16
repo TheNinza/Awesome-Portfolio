@@ -1,11 +1,11 @@
 import React, { lazy, Suspense } from "react";
 import { Route, Switch } from "react-router-dom";
 import Header from "./components/header/header.component";
-import Skills from "./pages/skills/skills";
-import Projects from "./pages/projects/projects";
-import Contact from "./pages/contact/contact";
 
 const About = lazy(() => import("./pages/about/about"));
+const Skills = lazy(() => import("./pages/skills/skills"));
+const Projects = lazy(() => import("./pages/projects/projects"));
+const Contact = lazy(() => import("./pages/contact/contact"));
 const App = () => {
   return (
     <div className="App">
