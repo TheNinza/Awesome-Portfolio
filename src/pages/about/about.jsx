@@ -20,7 +20,7 @@ const About = () => {
           </div>
         </div>
         <div className="photo-container">
-          <img className="photo" src={PersonImage} alt="Me" />
+          {/* <img className="photo" src={PersonImage} alt="Me" /> */}
         </div>
       </div>
     </div>

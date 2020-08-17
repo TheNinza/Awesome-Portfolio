@@ -2,6 +2,7 @@ import React from "react";
 import "./skills.styles.scss";
 import SkillsBackground from "../../assets/skills-wave.png";
 import DevelopmentCard from "../../components/development-card/development-card.component";
+import CodingCard from "../../components/coding-card/coding-card.component";
 
 const Skills = () => {
   return (
@@ -19,7 +20,7 @@ const Skills = () => {
           </div>
           <div className="cube">
             <h1 className="cube-title coding-title">CODING</h1>
-            <DevelopmentCard />
+            <CodingCard />
           </div>
           <div className="cube">
             <h1 className="cube-title content-title">CONTENT-CREATION</h1>

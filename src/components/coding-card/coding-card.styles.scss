@@ -1,0 +1,37 @@
+.achievement-section {
+  margin-top: 60px;
+  width: 100%;
+  & .heading {
+    padding: 15px;
+    color: black;
+    font-size: 1.5em;
+    font-weight: normal;
+  }
+  .codechef-container {
+    margin-left: 15px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    .codechef-logo {
+      height: 100%;
+      background-size: cover;
+    }
+    .rating {
+      font-size: 28px;
+      background-color: #1e7d22;
+      color: white;
+      padding: 5px;
+      margin-left: 20px;
+    }
+    .codeforces-logo {
+      width: 50%;
+    }
+    .codeforces-rating {
+      font-size: 20px;
+      color: #03a89e;
+      padding: 5px;
+      font-weight: bolder;
+      margin-left: 15px;
+    }
+  }
+}
