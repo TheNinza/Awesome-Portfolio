@@ -17,14 +17,12 @@
     .cubes-container {
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      height: 68%;
+      align-items: flex-start;
       width: 100%;
       padding: 0 8.2%;
       .cube {
         height: 100%;
         width: 28%;
-        transform: translateY(-5%);
         .cube-title {
           text-align: center;
           font-weight: bold;

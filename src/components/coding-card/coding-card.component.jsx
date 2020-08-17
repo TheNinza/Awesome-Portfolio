@@ -10,11 +10,36 @@ import codeforceslogo from "../../assets/codeforceslogo.png";
 import Javascript from "../../assets/javascriptlogo.png";
 
 const CodingCard = () => {
-  const languagesIcons = [cpplogo, clogo, Javascript, pythonlogo];
+  const codingIcons = [
+    {
+      icon: cpplogo,
+      title: "C++",
+      expertise: "Advanced",
+      stars: 4,
+    },
+    {
+      icon: clogo,
+      title: "C",
+      expertise: "Advanced",
+      stars: 4,
+    },
+    {
+      icon: Javascript,
+      title: "Javascript",
+      expertise: "Intermediate",
+      stars: 3,
+    },
+    {
+      icon: pythonlogo,
+      title: "Python",
+      expertise: "Intermediate",
+      stars: 2,
+    },
+  ];
   return (
     <div className="card">
       <div>
-        <CardSection title="Languages" icons={languagesIcons} />
+        <CardSection title="Languages" iconProps={codingIcons} />
       </div>
       <div className="achievement-section">
         <div className="end-line" />
