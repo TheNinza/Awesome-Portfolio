@@ -3,6 +3,7 @@ import "./skills.styles.scss";
 import SkillsBackground from "../../assets/skills-wave.png";
 import DevelopmentCard from "../../components/development-card/development-card.component";
 import CodingCard from "../../components/coding-card/coding-card.component";
+import ContentCard from "../../components/content-card/content-card.component";
 
 const Skills = () => {
   return (
@@ -24,7 +25,7 @@ const Skills = () => {
           </div>
           <div className="cube">
             <h1 className="cube-title content-title">CONTENT-CREATION</h1>
-            <DevelopmentCard />
+            <ContentCard />
           </div>
         </div>
       </div>
