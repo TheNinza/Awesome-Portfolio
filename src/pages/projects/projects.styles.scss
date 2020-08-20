@@ -2,11 +2,75 @@
   height: 100vh;
   width: 100vw;
   position: relative;
-  z-index: -1;
   .projects-bg-image {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 100%;
+    z-index: -1;
+  }
+  & .projects-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & .carausel-container {
+      width: 80%;
+      height: 80%;
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      & .next-button,
+      & .prev-button {
+        position: absolute;
+        background-color: rgba($color: #c4c4c4, $alpha: 0.5);
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        border: 6px solid rgba($color: white, $alpha: 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+      & .next-button {
+        right: -5%;
+        & .next-triangle {
+          width: 0px;
+          height: 0px;
+          border-top: 12px solid transparent;
+          border-bottom: 12px solid transparent;
+          border-left: 12px solid rgba($color: #000000, $alpha: 0.42);
+          margin-left: 4px;
+        }
+      }
+      & .prev-button {
+        left: -5%;
+        & .prev-triangle {
+          width: 0px;
+          height: 0px;
+          border-top: 12px solid transparent;
+          border-bottom: 12px solid transparent;
+          border-right: 12px solid rgba($color: #000000, $alpha: 0.42);
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+}
+
+.swiper-slide-active:hover {
+  .project-card {
+    transform: scale(1.05);
+  }
+  .project-descreption-container {
+    animation: descreption 0.2s ease-in;
+    display: block;
+  }
+
+  .project-title {
+    display: none;
   }
 }

@@ -1,0 +1,97 @@
+.project-card {
+  height: 44vh;
+  position: relative;
+  z-index: 4;
+  background-color: rgba(#3a3a3a, 0.9);
+  border-radius: 10px;
+  // box-shadow: 0 4px 4px 2px rgba($color: #000000, $alpha: 0.25);
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s linear;
+
+  & .project-image-container {
+    width: 100%;
+    padding: 10px;
+    z-index: 3;
+    position: relative;
+    text-align: center;
+
+    & .project-image {
+      max-width: 100%;
+      border-radius: 5px;
+    }
+  }
+
+  & .project-title {
+    // display: none;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20%;
+  }
+
+  & .project-descreption-container {
+    position: absolute;
+    overflow: hidden;
+    height: 80%;
+    top: 20%;
+    display: none;
+    width: 100%;
+    background-color: rgba($color: #ffffff, $alpha: 0.37);
+    border-radius: 14px 14px 0 0;
+    & .project-descreption {
+      color: white;
+      margin-top: 35%;
+      text-align: center;
+      font-size: 1em;
+    }
+
+    & .buttons-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 13px;
+      padding: 0 10px;
+
+      & .project-button {
+        height: 40px;
+        min-width: 45%;
+        border-radius: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.1s linear;
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.1);
+          box-shadow: 0 0 4px 3px rgba($color: black, $alpha: 0.25);
+        }
+
+        &:active {
+          transform: scale(1);
+        }
+      }
+
+      & .live-button {
+        background: linear-gradient(to bottom, #ffd600, #ff6b00);
+      }
+      & .source-button {
+        background: linear-gradient(to bottom, #61dafb, #007f9b);
+      }
+    }
+  }
+}
+
+@keyframes descreption {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: 20%;
+  }
+}
