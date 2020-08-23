@@ -1,0 +1,19 @@
+.footer-container {
+  position: absolute;
+  bottom: 2%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .footer {
+    .footer-line {
+      height: 1px;
+      background-color: #6c6c6c;
+    }
+
+    .footer-text {
+      margin-top: 5px;
+      color: #9a9a9a;
+    }
+  }
+}

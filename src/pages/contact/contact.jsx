@@ -2,6 +2,7 @@ import React from "react";
 import "./contact.styles.scss";
 
 import ContactBackground from "../../assets/contact-wave.png";
+import Footer from "../../components/footer/footer";
 
 const Contact = () => {
   return (
@@ -54,6 +55,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
