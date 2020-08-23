@@ -10,4 +10,80 @@
     height: 100%;
     z-index: -1;
   }
+
+  & .contact-content {
+    height: 100%;
+    width: 100%;
+
+    & .text-field {
+      margin-left: 13%;
+      position: relative;
+      top: 25%;
+
+      & .impressed {
+        font-weight: bold;
+        font-size: 4rem;
+      }
+
+      & .question {
+        font-size: 1.8rem;
+        font-weight: normal;
+        margin-left: 6rem;
+      }
+    }
+
+    & .contact-me-container {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      & .contact-me {
+        height: 100px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba($color: #3a3a3a, $alpha: 0.61);
+        border-radius: 29px;
+        box-shadow: 0 4px 4px rgba($color: black, $alpha: 0.25);
+        color: white;
+        font-weight: bold;
+        font-size: 38px;
+        transition: all 0.2s linear;
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+        &:active {
+          transform: scale(1);
+        }
+      }
+    }
+
+    & .contact-icons-container {
+      width: 100%;
+      position: absolute;
+      bottom: 75px;
+      display: flex;
+      justify-content: center;
+
+      & .contact-icons {
+        width: 20rem;
+        display: flex;
+        justify-content: space-around;
+        color: white;
+        font-size: 40px;
+
+        & i {
+          cursor: pointer;
+          transition: all 0.2s ease;
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
 }
