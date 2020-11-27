@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="footer">
         <div className="footer-line"></div>
         <div className="footer-text">
-          <i class="fa fa-copyright" aria-hidden="true"></i>
+          <i className="fa fa-copyright" aria-hidden="true"></i>
           2020- Template Designed By Nikhil Gupta
         </div>
       </div>

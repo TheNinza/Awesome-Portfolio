@@ -79,8 +79,8 @@ const Projects = () => {
             style={{ padding: "20px 0" }}
           >
             {projects.map((project, i) => (
-              <SwiperSlide>
-                <ProjectCard project={project} key={i} />
+              <SwiperSlide key={i}>
+                <ProjectCard project={project} />
               </SwiperSlide>
             ))}
           </Swiper>

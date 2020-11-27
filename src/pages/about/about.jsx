@@ -2,7 +2,6 @@ import React from "react";
 import "./about.styles.scss";
 
 import AboutBackground from "../../assets/about-wave.png";
-import PersonImage from "../../assets/myImage.png";
 
 const About = () => {
   return (
@@ -20,7 +19,6 @@ const About = () => {
           </div>
         </div>
         <div className="photo-container">
-          {/* <img className="photo" src={PersonImage} alt="Me" /> */}
         </div>
       </div>
     </div>
