@@ -18,7 +18,7 @@ const Contact = () => {
           <div className="question">Want to work with me? Awesome!</div>
         </div>
         <div className="contact-me-container">
-          <div className="contact-me" onClick={() => window.open("mailto:niks.a3198@iiitm.ac.in")}>Contact Me</div>
+          <div className="contact-me" onClick={() => window.open("mailto:niks.a3198@gmail.com")}>Contact Me</div>
         </div>
 
         <div className="contact-icons-container">
